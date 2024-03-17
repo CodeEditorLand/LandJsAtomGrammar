@@ -1,5 +1,19 @@
 {
+  "name": "js-atom-grammar",
+  "displayName": "JavaScript Atom Grammar",
+  "version": "0.1.14",
+  "private": true,
+  "description": "The Atom editor's JavaScript text mate grammar.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-js-atom-grammar.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
   "author": "Microsoft Corporation",
+  "publisher": "ms-vscode",
+  "scripts": {
+    "update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
+  },
   "contributes": {
     "grammars": [
       {
@@ -9,29 +23,15 @@
       }
     ]
   },
-  "description": "The Atom editor's JavaScript text mate grammar.",
   "devDependencies": {
     "cson-parser": "1.3.3"
   },
-  "displayName": "JavaScript Atom Grammar",
   "extensionDependencies": [
     "vscode.javascript"
   ],
+  "icon": "logo.png",
   "galleryBanner": {
     "color": "#5c2d91",
     "theme": "dark"
-  },
-  "icon": "logo.png",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "name": "js-atom-grammar",
-  "private": true,
-  "publisher": "ms-vscode",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-js-atom-grammar.git"
-  },
-  "scripts": {
-    "update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
-  },
-  "version": "0.1.14"
+  }
 }
