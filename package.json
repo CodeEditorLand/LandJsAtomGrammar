@@ -1,46 +1,50 @@
 {
-  "name": "js-atom-grammar",
-  "private": true,
-  "displayName": "JavaScript Atom Grammar",
-  "description": "The Atom editor's JavaScript text mate grammar.",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "author": "Microsoft Corporation",
-  "galleryBanner": {
-    "color": "#5c2d91",
-    "theme": "dark"
-  },
-  "icon": "logo.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-js-atom-grammar.git"
-  },
-  "publisher": "ms-vscode",
-  "version": "0.1.14",
-  "engines": {
-    "vscode": "*"
-  },
-  "devDependencies": {
-    "cson-parser": "4.0.9"
-  },
-  "scripts": {
-    "update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
-  },
-  "extensionDependencies": [
-    "vscode.javascript"
-  ],
-  "categories": [
-    "Languages"
-  ],
-  "keywords": [
-    "javascript"
-  ],
-  "contributes": {
-    "grammars": [
-      {
-        "language": "javascript",
-        "scopeName": "source.js",
-        "path": "./syntaxes/javascript.json"
-      }
-    ]
-  }
+	"name": "js-atom-grammar",
+	"displayName": "JavaScript Atom Grammar",
+	"version": "0.0.1",
+	"private": false,
+	"description": "The Atom editor's JavaScript text mate grammar.",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'",
+		"update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
+	},
+	"contributes": {
+		"grammars": [
+			{
+				"language": "javascript",
+				"path": "./syntaxes/javascript.json",
+				"scopeName": "source.js"
+			}
+		]
+	},
+	"devDependencies": {
+		"cson-parser": "4.0.9",
+		"typescript-esbuild": "latest"
+	},
+	"extensionDependencies": [
+		"vscode.javascript"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#5c2d91",
+		"theme": "dark"
+	}
 }
