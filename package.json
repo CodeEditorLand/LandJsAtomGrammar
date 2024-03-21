@@ -34,7 +34,7 @@
 	},
 	"devDependencies": {
 		"cson-parser": "4.0.9",
-		"typescript-esbuild": "latest"
+		"typescript-esbuild": "0.4.5"
 	},
 	"extensionDependencies": [
 		"vscode.javascript"
