@@ -1,31 +1,11 @@
 {
-	"name": "js-atom-grammar",
-	"displayName": "JavaScript Atom Grammar",
-	"version": "0.0.1",
-	"private": false,
-	"description": "The Atom editor's JavaScript text mate grammar.",
-	"keywords": [
-		"land"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandJSAtomGrammar#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandJSAtomGrammar/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/LandJSAtomGrammar.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "🌆 — Land —",
 		"email": "Land@PlayForm.Cloud",
+		"name": "🌆 — Land —",
 		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
-	"type": "module",
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandJSAtomGrammar/issues"
 	},
 	"contributes": {
 		"grammars": [
@@ -36,20 +16,40 @@
 			}
 		]
 	},
+	"description": "The Atom editor's JavaScript text mate grammar.",
 	"devDependencies": {
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
 		"cson-parser": "4.0.9"
 	},
+	"displayName": "JavaScript Atom Grammar",
 	"extensionDependencies": [
 		"vscode.javascript"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
-	"icon": "logo.png",
 	"galleryBanner": {
 		"color": "#5c2d91",
 		"theme": "dark"
-	}
+	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandJSAtomGrammar#readme",
+	"icon": "logo.png",
+	"keywords": [
+		"land"
+	],
+	"license": "SEE LICENSE IN LICENSE",
+	"name": "js-atom-grammar",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandJSAtomGrammar.git"
+	},
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
