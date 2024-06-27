@@ -15,7 +15,7 @@
 		]
 	},
 	"devDependencies": {
-		"cson-parser": "^4.0.9"
+		"cson-parser": "4.0.9"
 	},
 	"extensionDependencies": [
 		"vscode.javascript"
