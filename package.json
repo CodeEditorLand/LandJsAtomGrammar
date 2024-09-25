@@ -1,4 +1,10 @@
 {
+	"name": "js-atom-grammar",
+	"displayName": "JavaScript Atom Grammar",
+	"description": "The Atom editor's JavaScript text mate grammar.",
+	"scripts": {
+		"update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
+	},
 	"contributes": {
 		"grammars": [
 			{
@@ -8,21 +14,15 @@
 			}
 		]
 	},
-	"description": "The Atom editor's JavaScript text mate grammar.",
 	"devDependencies": {
 		"cson-parser": "4.0.9"
 	},
-	"displayName": "JavaScript Atom Grammar",
 	"extensionDependencies": [
 		"vscode.javascript"
 	],
+	"icon": "logo.png",
 	"galleryBanner": {
 		"color": "#5c2d91",
 		"theme": "dark"
-	},
-	"icon": "logo.png",
-	"name": "js-atom-grammar",
-	"scripts": {
-		"update-grammar": "node ./build/update-grammar.js atom/language-javascript grammars/javascript.cson ./syntaxes/javascript.json"
 	}
 }
